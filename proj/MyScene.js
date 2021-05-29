@@ -209,7 +209,7 @@ export class MyScene extends CGFscene {
         this.translate(6,0,-6);
         //this.nest.display();
         this.popMatrix();*/
-        this.pushMatrix();
+       this.pushMatrix();
         if(this.displayFish){
             //this.gl.texParameteri(this.gl.TEXTURE_2D, this.gl.TEXTURE_MAG_FILTER, this.gl.LINEAR);
             this.translate(this.fish.x,this.fish.y,this.fish.z);

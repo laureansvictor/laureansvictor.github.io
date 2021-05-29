@@ -52,11 +52,9 @@ export class MyFishAutomation extends CGFobject {
         this.scene.translate(this.PosX, this.PosY, this.PosZ);
         this.scene.rotate(ang, 0,10, 0);
         this.scene.scale(scale, scale, scale);
-
         this.scene.rotate(Math.PI*80 / 180, 0, 1, 0);
         this.fish1.display();
         this.scene.popMatrix();
-
     }
 
     autoFish(){

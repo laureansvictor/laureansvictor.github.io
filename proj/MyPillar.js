@@ -1,7 +1,10 @@
 import {CGFobject, CGFappearance} from '../lib/CGF.js';
 import { MyCylinder } from './MyCylinder.js';
-import { MyQuad} from "./MyQuad.js";
 
+/**
+ * MyCylinder
+ * @constructor
+ */
 export class MyPillar extends CGFobject {
     constructor(scene){
         super(scene);
@@ -49,17 +52,12 @@ export class MyPillar extends CGFobject {
         this.pillar.display();
         this.scene.popMatrix();
 
-
         this.scene.pushMatrix();
         this.rustMaterial.apply();
         this.scene.translate(-0.5,-1,14);
         this.scene.scale(0.5,12,0.5);
-
         this.pillar.display();
-        this.scene.popMatrix();
-
-
-
+        this.scene.popMatrix()
 
     }
 

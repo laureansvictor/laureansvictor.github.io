@@ -19,10 +19,8 @@ export class MyRockSet extends CGFobject {
             var scaleY = (Math.round(Math.random()) ? 0.05 : 0.08);
             var scaleZ = (Math.round(Math.random()) ? 0.10 : 0.15);
             this.rocks.push(new MyRock(this.scene, 20,10));
-            //this.scene.pushMatrix();
-            this.rocks[i].setPosition(x,-1.5,z);
+            this.rocks[i].setPosition(x,-0.7,z);
             this.rocks[i].setScale(scaleX,scaleY,scaleZ);
-            //this.scene.popMatrix();
         }
     }
 

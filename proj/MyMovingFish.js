@@ -58,8 +58,7 @@ export class MyMovingFish extends CGFobject {
                     this.rocks[this.idx].state = 2;
                     this.hasRock = false;
                     this.rocks[this.idx].inMouth = false;
-                    this.rocks[this.idx].setPosition(this.x, this.y, this.z + 0.5);
-                    this.rocks[this.idx].drop(this.rocks[this.idx].getPosition()[0], this.rocks[this.idx].getPosition()[2]);
+                    this.rocks[this.idx].drop(this.x, this.z);
                     console.log("New rock state: ", this.rocks[this.idx]);
                 }
             }
@@ -115,6 +114,7 @@ export class MyMovingFish extends CGFobject {
         if(this.hasRock){
             this.hasRock=false;
             this.rocks[this.idx].state = 0;
+            this.rocks[this.idx].inMouth = false;
         }
     }
 
